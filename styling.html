@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width:50%;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="border:5px solid black">Good Evening</h1>
+    <h1>Good Evening</h1>
+    <script>
+        //let h1Elem=document.querySelector('h1');
+        let h1Elem=document.getElementsByTagName('h1');
+        h1Elem[1].style.color="red";
+        h1Elem[0].style.backgroundColor="Yellow"
+
+        console.log(h1Elem[0].style);
+        console.log(h1Elem[0].style.border)
+        console.log(h1Elem[0].style.width)
+         let styles=window.getComputedStyle(h1Elem[0]);
+
+        console.log(styles.getPropertyValue("width"))
+         console.log(styles.getPropertyValue("border-radius"))
+    </script>
+</body>
+</html>

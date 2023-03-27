@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let table=document.createElement("table");
+        document.body.append(table)
+        table.setAttribute("border","2")
+
+        let trhead=document.createElement("tr");
+        table.append(trhead)
+        
+        let th1=document.createElement('th');
+        trhead.append(th1);
+        th1.innerText="s.No"
+
+        let th2=document.createElement('th');
+        trhead.append(th2);
+        th2.innerText="Name"
+
+        let th3=document.createElement('th');
+        trhead.append(th3);
+        th3.innerText="Age"
+
+        let tr1=document.createElement('tr')
+        table.append(tr1);
+
+        let td11=document.createElement('td');
+        tr1.append(td11);
+        td11.innerText="1"
+
+        let td12=document.createElement('td');
+        tr1.append(td12);
+        td12.innerText="Ramya"
+
+        let td13=document.createElement('td');
+        tr1.append(td13);
+        td13.innerText="22";
+
+        let tr2=document.createElement('tr')
+        table.append(tr2);
+
+        let td21=document.createElement('td');
+        tr2.append(td21);
+        td21.innerText="2"
+
+        let td22=document.createElement('td');
+        tr2.append(td22);
+        td22.innerText="Sandhya"
+
+        let td23=document.createElement('td');
+        tr2.append(td23);
+        td23.innerText="21";
+        
+
+    </script>
+</body>
+</html>
